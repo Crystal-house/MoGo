@@ -1,0 +1,360 @@
+html, body{
+	height: 100%;
+	overflow-x: hidden;
+}
+header{
+	background: url(../img/picture.jpg) center no-repeat;
+	background-size: cover;
+	height: 100%;
+	min-height: 300px;
+}
+.container {
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+
+.header{
+	.menu-mobile{
+		width: 100%;
+	}
+	&__logo{
+		margin-top: 14px;
+
+	}
+	&__logo-item{
+		list-style: none;
+	}
+	&__logo-link{
+		font-family: Montserrat, sans-serif;
+		font-weight: bold;
+		font-size: 30px;
+		color: #ffffff;
+		&:hover{
+				text-decoration: none;
+				color: #ffffff;
+			}
+	}
+
+	&__menu{
+		margin-top: 30px;
+		float: right;
+	}
+	&__menu-item{	
+		font-family: Montserrat, sans-serif;
+		text-transform: uppercase;
+		color: #ffffff;
+		list-style: none;
+		display: inline-block;
+		font-size: 14px;
+		padding-left: 55px;
+	}	
+	&__menu-link{
+		color: #ffffff;
+		text-decoration: none;
+		&:hover{
+			color: #fce38a;
+			text-decoration: none;
+			-webkit-transition: .2s ease-in-out;
+	    	-moz-transition: .2s ease-in-out;
+	    	-o-transition: .2s ease-in-out;
+	    	transition: .2s ease-in-out;
+	    	padding-bottom: 7px;
+	    	border-bottom: 3px solid #fce38a;
+	    	
+		}
+		&:active{
+			color: #fce38a;
+			border-bottom: 1px solid #fce38a;
+			padding-bottom: 7px;
+	    	border-bottom: 3px solid #fce38a;
+		}
+	}
+
+	&__content-title{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+		color: #ffffff;
+		font-size: 150px;
+		line-height: 140px;
+		text-align: center;
+		text-transform: uppercase;
+		margin-top: 28px;
+		margin-bottom: 64px;
+	}
+	&__content-subtitle{
+		font-family: 'Kaushan Script', cursive;
+    	font-weight: normal;
+    	font-style: normal;
+		color: #ffffff;
+		font-size: 72px;
+		text-align: center;
+		margin-top: 145px;
+	}
+	&__content-line{
+		width: 60px;
+		border-top: 3px solid #fff;
+		margin-bottom: 55px;
+	}
+	&__content-btn{
+		text-align: center;
+	}
+	&__content-btn_default{
+		font-family: Montserrat, sans-serif;
+		color: #fff;
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		text-decoration: none;
+		padding: 8px 29px 9px 29px;
+		margin: 0 10px;
+		border: 3px solid #fff;
+		border-radius: 0;
+		background: #efc788;
+		transition: background .5s;
+		&:hover{
+			background: #dab479;
+			border: 3px solid #fff;
+			color: #fff;
+			text-decoration: none;
+		}
+		&:visited{
+			background: #efc788;
+			border: 3px solid #fff;
+			color: #fff;
+		}
+	}
+	&__mobile-button{
+		outline: none;
+	}
+	&__mobile-animated-icon1,
+	&__mobile-animated-icon2,
+	&__mobile-animated-icon3 {
+	    width: 30px;
+	    height: 20px;
+	    position: relative;
+	    margin: 0px;
+	    -webkit-transform: rotate(0deg);
+	    -moz-transform: rotate(0deg);
+	    -o-transform: rotate(0deg);
+	    transform: rotate(0deg);
+	    -webkit-transition: .5s ease-in-out;
+	    -moz-transition: .5s ease-in-out;
+	    -o-transition: .5s ease-in-out;
+	    transition: .5s ease-in-out;
+	    cursor: pointer;
+    	span{
+			display: block;
+			position: absolute;
+			background: #fff;
+			height: 3px;
+			width: 100%;
+			border-radius: 9px;
+			opacity: 1;
+			left: 0;
+			-webkit-transform: rotate(0deg);
+			-moz-transform: rotate(0deg);
+			-o-transform: rotate(0deg);
+			transform: rotate(0deg);
+			-webkit-transition: .25s ease-in-out;
+			-moz-transition: .25s ease-in-out;
+			-o-transition: .25s ease-in-out;
+			transition: .25s ease-in-out;
+			&:nth-child(1){
+				margin-top: 0;
+			}
+			&:nth-child(2){
+				margin-top: 8px;
+			}
+			&:nth-child(3){
+				margin-top: 16px;
+			}
+		} 
+	}
+}	
+.about-us{
+	&__subtitle{
+		font-family: 'Kaushan Script', cursive;
+    	font-weight: normal;
+    	font-style: normal;
+		color: #333333;
+		font-size: 24px;
+		text-align: center;
+		margin-top: 90px;
+	}
+	&__title{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+		color: #333333;
+		font-size: 30px;
+		text-align: center;
+		text-transform: uppercase;
+	}
+	&__content-line{
+		width: 60px;
+		border-top: 3px solid #f38181;
+		margin-top: 26px;
+		margin-bottom: 41px;
+	}
+	&__text{
+		font-family: 'Roboto', sans-serif;
+		font-size: 15px;
+		line-height: 24px;
+		font-weight: normal;
+		color: #999999;
+		text-align: center;
+		padding: 0 120px 0 120px;
+	}
+	&__3col{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 80px -15px 50px;
+	}
+	&__wrapper{
+		width: 33.33333%;
+    	padding: 0 15px;
+	}
+	&__item{
+		position: relative;
+		background-color: #95e1d3;
+		&:hover{
+			.about-us__img{
+				transform: translate3d(-10px, -10px, 0);
+			}
+			.about-us__img img{
+				opacity: .1;
+			}
+			.about-us__item-text{
+				opacity: 1;
+			}
+		}
+	}
+	&__img{
+	    background: linear-gradient(to bottom, #f38181, #fce38a);
+    	transition: transform .2s linear;
+    		
+	}
+	img{
+    		display: block;
+    		max-width: 100%;
+    		height: auto;
+    		transition: opacity .1s linear;
+    	}
+	&__item-text{
+		width: 100%;
+	    font-size: 18px;
+	    color: #fff;
+	    text-transform: uppercase;
+	    font-weight: 700;
+	    text-align: center;
+	    opacity: 0;
+	    position: absolute;
+	    top: 50%;
+	    left: 0;
+	    z-index: 2;
+	    transform: translate3d(0, -50%, 0);
+	    transition: opacity .2s linear;
+	}
+	&__icon{
+		margin: 0 auto;
+	}
+
+
+}	
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+	.header{
+		&__content-title{
+			font-size: 130px;
+			line-height: 120px;
+		}
+		&__content-subtitle{
+			font-size: 70px;
+		}
+
+	}
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.header{
+		&__menu-item{	
+			padding-left: 20px;
+
+		}
+		&__content-title{
+			font-size: 100px;
+			line-height: 90px;
+		}
+		&__content-subtitle{
+			font-size: 60px;
+		}
+	}
+}
+@media only screen and (max-width : 768px) {
+	.header{
+		.d-mobile-none{
+			display: none;
+		}
+		&__logo{
+			padding-left: 0;
+		}
+		&__mobile-menu{
+			text-align: center;
+			
+		}
+		&__menu-item{
+			font-size: 20px;
+		}
+		&__content-title{
+			font-size: 80px;
+			line-height: 70px;
+		}
+		&__content-subtitle{
+			font-size: 40px;
+			margin-top: 100px;
+		}
+		&__menu-link{
+			&:hover{
+				padding-bottom: 2px;
+	    		border-bottom: 3px solid #fce38a;
+			}
+			&:active{
+				padding-bottom: 2px;
+	    		border-bottom: 3px solid #fce38a;
+			}
+		}
+	}
+	.about-us{
+		&__text{
+			padding: 0 15px 0 15px;
+		}
+		&__3col{
+			margin-top: 50px;
+        	justify-content: center;
+		}
+		&__wrapper{
+			width: 100%;
+        	max-width: 410px;
+        	margin-bottom: 30px;
+		}
+	}
+}
+@media only screen and (max-width : 576px) {
+	.header{
+		&__content-title{
+			font-size: 50px;
+			line-height: 40px;
+		}
+		&__content-subtitle{
+			font-size: 25px;
+			margin-top: 100px;
+		}
+	}
+	.about-us{
+		&__text{
+			padding: 0 5px 0 5px;
+		}
+	}
+}
