@@ -213,7 +213,7 @@ header{
 }
 .info{
 	padding-top: 98px;
-	padding-bottom: 50px;
+	padding-bottom: 110px;
 	&__3col{
 		display: flex;
 		flex-wrap: wrap;
@@ -269,7 +269,38 @@ header{
 		opacity: 1 !important;
 	}
 }
-
+.counter{
+	margin-bottom: 50px;
+	background-color: #95e1d3;
+	.container{
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__child{
+		flex: 1 1 0;
+		padding: 77px 25px 84px 25px;
+		border-left: 1px solid #b5eae0;
+		text-align: center;
+	}
+	&__child:last-child {
+    	border-right: 1px solid #b5eae0;
+	}
+	&__number{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+		color: #ffffff;
+		font-size: 72px;
+		line-height: 1;
+		margin-bottom: 16px; 
+	}
+	&__description{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 600;
+		color: #ffffff;
+		font-size: 14px;
+		text-transform: uppercase; 
+	}
+}
 
 
 /* Large Devices, Wide Screens */
@@ -281,6 +312,17 @@ header{
 		}
 		&__content-subtitle{
 			font-size: 70px;
+		}
+	}
+	.counter{
+		&__child{
+			padding: 67px 25px 74px 25px;
+		}
+		&__number{
+			font-size: 63px;
+		}
+		&__description{
+			font-size: 11px;
 		}
 	}
 
@@ -298,6 +340,17 @@ header{
 		}
 		&__content-subtitle{
 			font-size: 60px;
+		}
+	}
+	.counter{
+		&__child{
+			padding: 57px 10px 64px 10px;
+		}
+		&__number{
+			font-size: 55px;
+		}
+		&__description{
+			font-size: 10px;
 		}
 	}
 }
@@ -341,7 +394,8 @@ header{
 		}
 	}
 	.info{
-		padding-top: 50px;
+		padding-top: 40px;
+		padding-bottom: 40px;
 		&__3col{
         	justify-content: center;
 		}
@@ -349,6 +403,17 @@ header{
 			width: 100%;
         	max-width: 410px;
         	margin-bottom: 30px;
+		}
+	}
+	.counter{
+		&__child{
+			padding: 57px 2px 64px 2px;
+		}
+		&__number{
+			font-size: 50px;
+		}
+		&__description{
+			font-size: 10px;
 		}
 	}
 
@@ -367,6 +432,24 @@ header{
 	.description{
 		&__text{
 			padding: 0 5px 0 5px;
+		}
+	}
+	.counter{
+		&__child{
+			padding: 27px 2px 27px 2px;
+			width: 100%;
+			border-left: none;
+			border-bottom: 1px solid #b5eae0;
+			flex: none;
+		}
+		&__child:last-child {
+	    	border-right: none;
+		}
+		&__number{
+			font-size: 52px;
+		}
+		&__description{
+			font-size: 14px;
 		}
 	}
 }
