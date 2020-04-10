@@ -231,15 +231,18 @@ header{
 			.info__box{
 				transform: translate3d(-10px, -10px, 0);
 			}
-			.info__box img{
+			.box_gradient img{
 				opacity: .1;
 			}
-			.info__item-text{
+			.info__description{
 				opacity: 1;
 			}
 		}
 	}
 	&__box{
+		transition: transform .2s linear;
+	}
+	.box_gradient{
 	    background: linear-gradient(to bottom, #f38181, #fce38a);
     	transition: transform .2s linear;
 	}
@@ -249,7 +252,7 @@ header{
 		height: auto;
 		transition: opacity .1s linear;
     }
-	&__item-text{
+	&__description{
 		width: 100%;
 	    font-size: 18px;
 	    color: #fff;
@@ -268,6 +271,50 @@ header{
 		margin: 0 auto;
 		opacity: 1 !important;
 	}
+	&__signature{
+		font-family: 'Montserrat', sans-serif;
+		color: #333333;
+		text-transform: uppercase;
+		text-align: center;
+		font-size: 14px;
+		font-weight: 500;
+		margin-top: 25px; 
+	}
+	.signature_thin{
+		font-family: 'Roboto', sans-serif;
+		color: #999999;
+		font-weight: lighter;
+		font-style: italic;
+		text-transform: none;
+		font-size: 15px;
+		margin-top: 5px;
+		line-height: 24px;
+
+	}
+	&__icons {
+    	display: flex;
+    	justify-content: center;
+	}
+	&__icons-item {
+	    width: 55px;
+	    height: 55px;
+	    padding: 12px 10px;
+	    background-color: #fce38a;
+	    border-right: 1px solid #f38181;
+	    font-size: 30px;
+	    text-decoration: none;
+	    color: #f38181;
+	    line-height: 1;
+	    transition: background .1s linear, color .1s linear;
+	}
+	&__icons-item:last-child{
+		border-right: none;
+	}
+	&__icons-item:hover {
+	    color: #ffffff;
+	    background-color: #f38181;
+	}
+
 }
 .counter{
 	margin-bottom: 50px;
@@ -342,6 +389,13 @@ header{
 			font-size: 60px;
 		}
 	}
+	.info{
+		&__icons-item{
+			width: 45px;
+			height: 45px;
+			padding: 7px 7px;
+		}
+	}
 	.counter{
 		&__child{
 			padding: 57px 10px 64px 10px;
@@ -364,7 +418,6 @@ header{
 		}
 		&__mobile-menu{
 			text-align: center;
-			
 		}
 		&__menu-item{
 			font-size: 20px;
@@ -394,7 +447,7 @@ header{
 		}
 	}
 	.info{
-		padding-top: 40px;
+		padding-top: 48px;
 		padding-bottom: 40px;
 		&__3col{
         	justify-content: center;
