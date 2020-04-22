@@ -473,7 +473,7 @@ header {
     padding-bottom: 2px;
     border-bottom: 3px solid #fce38a; }
   .header__content {
-    padding-top: 20vh;
+    padding-top: calc(20vh - 91px);
     padding-bottom: 20vh; }
   .description__text {
     padding: 0 15px 0 15px; }

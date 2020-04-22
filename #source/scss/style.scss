@@ -543,7 +543,7 @@ header{
 			}
 		}
 		&__content{
-			padding-top: 20vh;
+			padding-top: calc(20vh - 91px);
 			padding-bottom: 20vh;
 		}
 	}
