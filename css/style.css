@@ -341,6 +341,12 @@ header {
   padding-bottom: 70px;
   margin-bottom: 100px; }
   .slider__box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 90%;
     margin: 0 auto; }
   .slider .item::active {
@@ -373,22 +379,6 @@ header {
     width: 60px;
     margin-right: 10px;
     background-color: #f38181; }
-  .slider__owl-nav {
-    position: relative;
-    background: none;
-    cursor: pointer;
-    z-index: 1;
-    background-color: inherit; }
-  .slider__boxPrev {
-    position: absolute;
-    left: 17px;
-    z-index: 99;
-    top: -87px; }
-  .slider__boxNext {
-    position: absolute;
-    right: 17px;
-    z-index: 99;
-    top: -87px; }
   .slider__owl-prev, .slider__owl-next {
     background-color: #f8f8f8;
     border: none;
@@ -443,6 +433,9 @@ header {
     font-size: 55px; }
   .counter__description {
     font-size: 10px; }
+  .slider__box {
+    width: 95%;
+    margin: 0 auto; }
   .slider__description {
     font-size: 20px;
     line-height: 28px;
@@ -506,9 +499,7 @@ header {
       margin-left: 170px; }
     .slider__img {
       margin-left: 25px;
-      width: 120px !important; }
-    .slider__boxPrev, .slider__boxNext {
-      top: -77px; } }
+      width: 120px !important; } }
 
 @media only screen and (max-width: 576px) {
   .header__content-title {
@@ -545,8 +536,6 @@ header {
   .slider__img {
     margin-left: 15px;
     width: 100px !important; }
-  .slider__boxPrev, .slider__boxNext {
-    top: -62px; }
   .slider__boxPrev {
     left: 0; }
   .slider__boxNext {
@@ -562,9 +551,7 @@ header {
     margin-left: 88px; }
   .slider__img {
     margin-left: 10px;
-    width: 70px !important; }
-  .slider__boxPrev, .slider__boxNext {
-    top: -48px; } }
+    width: 70px !important; } }
 
 @media only screen and (max-width: 450px) {
   .slider__description {
@@ -577,10 +564,4 @@ header {
   .slider__signature::before {
     width: 25px; }
   .slider__img {
-    display: none !important; }
-  .slider__boxPrev, .slider__boxNext {
-    top: -48px; } }
-
-@media only screen and (max-width: 374px) {
-  .slider__boxPrev, .slider__boxNext {
-    top: -54px; } }
+    display: none !important; } }

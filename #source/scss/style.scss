@@ -352,6 +352,8 @@ header{
 	padding-bottom: 70px;
 	margin-bottom: 100px;
 	&__box{
+		display: flex;
+        align-items: center;
 		width: 90%;
 		margin: 0 auto;
 	}
@@ -390,25 +392,7 @@ header{
 	    margin-right: 10px;
 	    background-color: #f38181;
 	}
-	&__owl-nav{
-		position: relative;
-		background: none;
-		cursor: pointer;
-		z-index: 1;
-		background-color: inherit;
-	}
-	&__boxPrev{
-		position: absolute;
-		left:17px;
-		z-index: 99;
-		top: -87px;
-	}
-	&__boxNext{
-		position: absolute;
-		right: 17px;
-		z-index: 99;
-		top: -87px;
-	}
+
 	&__owl-prev,&__owl-next{
 		background-color: #f8f8f8;
 		border: none;
@@ -498,6 +482,10 @@ header{
 		}
 	}
 	.slider{
+		&__box{
+			width: 95%;
+			margin: 0 auto;
+		}
 		&__description{
 			font-size: 20px;
 			line-height: 28px;
@@ -591,9 +579,6 @@ header{
 			margin-left: 25px;
 			width: 120px !important;
 		}
-		&__boxPrev, &__boxNext{
-			top: -77px;
-		}
 	}
 
 }
@@ -649,9 +634,6 @@ header{
 			margin-left: 15px;
 			width: 100px !important;
 		}
-		&__boxPrev, &__boxNext{
-			top: -62px;
-		}
 		&__boxPrev{
 			left: 0;
 		}
@@ -675,9 +657,6 @@ header{
 			margin-left: 10px;
 			width: 70px !important;
 		}
-		&__boxPrev, &__boxNext{
-			top: -48px;
-		}
 	}
 }
 @media only screen and (max-width : 450px){
@@ -696,16 +675,6 @@ header{
 		}
 		&__img{
 			display: none !important;
-		}
-		&__boxPrev, &__boxNext{
-			top: -48px;
-		}
-	}
-}
-@media only screen and (max-width : 374px){
-	.slider{
-		&__boxPrev, &__boxNext{
-			top: -54px;
 		}
 	}
 }
