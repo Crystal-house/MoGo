@@ -354,8 +354,10 @@ header{
 	&__box{
 		display: flex;
         align-items: center;
-		width: 90%;
 		margin: 0 auto;
+	}
+	.owl-carousel{
+		width: 95% !important;
 	}
 	.item::active{
 		width: 88%;
@@ -482,10 +484,6 @@ header{
 		}
 	}
 	.slider{
-		&__box{
-			width: 95%;
-			margin: 0 auto;
-		}
 		&__description{
 			font-size: 20px;
 			line-height: 28px;
