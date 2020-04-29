@@ -350,7 +350,6 @@ header{
 	background-color: #f8f8f8;
 	padding-top: 70px;
 	padding-bottom: 70px;
-	margin-bottom: 100px;
 	&__box{
 		display: flex;
         align-items: center;
@@ -381,7 +380,7 @@ header{
 		font-style: italic;
 		color: #999999;
 		max-width: 770px;
-		align-self: baseline; 
+		align-self: center; 
 	}
 	&__signature{
 		font-family: 'Kaushan Script', cursive;
@@ -417,6 +416,12 @@ header{
 	}
 	&__owl-next{
 
+	}
+	&_white{
+		background-color: inherit;
+		.slider__owl-prev, .slider__owl-next{
+			background-color: #ffffff;
+		}
 	}
 }
 
@@ -669,8 +674,6 @@ header{
 		.item { flex-direction: row; 
 		}
 		&__description{
-			font-size: 15px;
-			line-height: 22px;
 			text-align: left;
 		}
 	}

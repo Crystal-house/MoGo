@@ -338,8 +338,7 @@ header {
 .slider {
   background-color: #f8f8f8;
   padding-top: 70px;
-  padding-bottom: 70px;
-  margin-bottom: 100px; }
+  padding-bottom: 70px; }
   .slider__box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -373,8 +372,9 @@ header {
     font-style: italic;
     color: #999999;
     max-width: 770px;
-    -ms-flex-item-align: baseline;
-    align-self: baseline; }
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center; }
   .slider__signature {
     font-family: 'Kaushan Script', cursive;
     font-size: 24px;
@@ -401,6 +401,10 @@ header {
     background-color: inherit; }
   .slider__owl-prev {
     margin-left: 23px; }
+  .slider_white {
+    background-color: inherit; }
+    .slider_white .slider__owl-prev, .slider_white .slider__owl-next {
+      background-color: #ffffff; }
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
@@ -567,6 +571,4 @@ header {
     -ms-flex-direction: row;
     flex-direction: row; }
   .slider__description {
-    font-size: 15px;
-    line-height: 22px;
     text-align: left; } }
