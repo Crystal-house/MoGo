@@ -355,7 +355,7 @@ header{
         align-items: center;
 		margin: 0 auto;
 	}
-	.owl-carousel{
+	&_owl-carousel-1{
 		width: 93% !important;
 	}
 	.item{
@@ -414,13 +414,22 @@ header{
 	&__owl-prev{
 		margin-left: 23px;
 	}
-	&__owl-next{
-
-	}
 	&_white{
 		background-color: inherit;
 		.slider__owl-prev, .slider__owl-next{
 			background-color: #ffffff;
+		}
+	}
+	&_brands{
+		.slider_owl-carousel-2 {
+		    width: 100% !important;
+		}
+		.owl-stage {
+		  display: flex;
+		  align-items: center;
+		}
+		.slider__imgBox{
+			margin: 0 auto;
 		}
 	}
 }
@@ -461,11 +470,16 @@ header{
 			margin-left: 40px;
 			margin-right: 55px;
 		}
-		.owl-carousel {
+		&_owl-carousel-1 {
     		width: calc(100% - 30px) !important;
 		}
 		&__owl-prev{
 			margin-left: 0;
+		}
+		&_brands{
+			.slider_owl-carousel-2{
+				width: 100% !important;
+			} 
 		}
 	}
 	
