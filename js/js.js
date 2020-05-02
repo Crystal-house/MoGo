@@ -30,8 +30,9 @@ function owlCarousel1(){
 }
 
 function owlCarousel2(){
-$('.slider_owl-carousel-2').owlCarousel({
+	$('.slider_owl-carousel-2').owlCarousel({
 		dots: false,
+		nav:false,
 	    responsive:{
 	    	0:{
 	            items:3,
