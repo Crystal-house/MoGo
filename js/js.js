@@ -28,7 +28,6 @@ function owlCarousel1(){
 	    owl.trigger("prev.owl.carousel");
 	});	
 }
-
 function owlCarousel2(){
 	$('.slider_owl-carousel-2').owlCarousel({
 		dots: false,
@@ -53,8 +52,14 @@ function owlCarousel2(){
 	    }
 	})
 }	
-	
-	
+function accordion(){
+	$('.collapse').on('show.bs.collapse', function(){
+		$(this).prev().find('.fas').removeClass().addClass('fas fa-chevron-up');
+	});
+	$('.collapse').on('hide.bs.collapse', function(){
+		$(this).prev().find('.fas').removeClass().addClass('fas fa-chevron-down');
+	});
+}
 
 
 
@@ -62,6 +67,7 @@ function owlCarousel2(){
 $(document).ready(function(){
 	owlCarousel1();
 	owlCarousel2();
+	accordion();
 });
 
 
