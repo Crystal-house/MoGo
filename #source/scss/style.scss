@@ -391,7 +391,7 @@ header{
         align-items: center;
 		margin: 0 auto;
 	}
-	&_owl-carousel-1{
+	.review-slider__slider{
 		width: 93% !important;
 	}
 	.item{
@@ -456,8 +456,8 @@ header{
 			background-color: #ffffff;
 		}
 	}
-	&_brands{
-		.slider_owl-carousel-2 {
+	.photo-slider{
+		.photo-slider__slider {
 		    width: 100% !important;
 		}
 		.owl-stage {
@@ -599,14 +599,14 @@ header{
 			margin-left: 40px;
 			margin-right: 55px;
 		}
-		&_owl-carousel-1 {
+		.review-slider__slider {
     		width: calc(100% - 30px) !important;
 		}
 		&__owl-prev{
 			margin-left: 0;
 		}
-		&_brands{
-			.slider_owl-carousel-2{
+		.photo-slider{
+			.photo-slider__slider{
 				width: 100% !important;
 			} 
 		}

@@ -1,35 +1,43 @@
-function owlCarousel1(){
-	$('.slider_owl-carousel-1').owlCarousel({
-	    loop:true,
-	    margin:3,
-	    dots: false,
-	    nav:false,
-	    smartSpeed:700,
-	    responsive:{
-	        0:{
-	            items:1,
-	        },
-	        600:{
-	            items:1,
-	        },
-	        1000:{
-	            items:1,
-	        }
-	    }
-	})
-	//Делегируем события кнопок next prev по умолчанию нашим кнопкам, которые могут находится вне контейнера слайдера
-	var owl=$(".slider_owl-carousel-1");
-	owl.owlCarousel();
-
-	$(".slider__owl-next").click(function(){
-	    owl.trigger("next.owl.carousel");
-	});
-	$(".slider__owl-prev").click(function(){
-	    owl.trigger("prev.owl.carousel");
+function initReviewSlider(){
+	$('.review-slider').each(function() {
+		var el = $(this); //общий контейнер, в котором лежат и слайдер, и стрелки
+		var slider = el.find('.review-slider__slider');
+		var nextArrow = el.find('.slider__owl-next');
+		var prevArrow = el.find('.slider__owl-prev');
+		
+		slider.owlCarousel({
+			// параметы
+			loop:true,
+		    margin:3,
+		    dots: false,
+		    nav:false,
+		    smartSpeed:700,
+		    responsive:{
+		        0:{
+		            items:1,
+		        },
+		        600:{
+		            items:1,
+		        },
+		        1000:{
+		            items:1,
+		        }
+		    }
+		});
+		
+		nextArrow.click(function(){
+			slider.trigger('next.owl.carousel');
+		});
+		
+		
+		prevArrow.click(function(){
+			slider.trigger('prev.owl.carousel');
+		});
 	});	
 }
-function owlCarousel2(){
-	$('.slider_owl-carousel-2').owlCarousel({
+
+function initPhotoSlider(){
+	$('.photo-slider__slider').owlCarousel({
 		dots: false,
 		nav:false,
 	    responsive:{
@@ -45,14 +53,14 @@ function owlCarousel2(){
 	            items:6,
 	            margin:15,
 	        },
-
 	        1000:{
 	            items:6,
 	        }
 	    }
 	})
-}	
-function accordion(){
+}
+
+function initAccordion(){
 	$('.collapse').on('show.bs.collapse', function(){
 		$(this).prev().find('.fas').removeClass().addClass('fas fa-chevron-up');
 	});
@@ -63,13 +71,11 @@ function accordion(){
 
 
 
-
 $(document).ready(function(){
-	owlCarousel1();
-	owlCarousel2();
-	accordion();
+	initReviewSlider();
+	initAccordion();
+	initPhotoSlider();
 });
-
 
 
 
