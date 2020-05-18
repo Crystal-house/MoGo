@@ -382,6 +382,7 @@ header{
 		text-transform: uppercase; 
 	}
 }
+
 .slider{
 	background-color: #f8f8f8;
 	padding-top: 70px;
@@ -390,9 +391,6 @@ header{
 		display: flex;
         align-items: center;
 		margin: 0 auto;
-	}
-	.review-slider__slider{
-		width: 93% !important;
 	}
 	.item{
 		display: flex;
@@ -403,8 +401,7 @@ header{
 		margin: 0 auto;
 	}
 	&__img {
-	    margin-right: 60px;
-		margin-left: 72px;
+		margin: 0 auto;
 		height: 100% !important;
 		width: auto !important;
 	}
@@ -416,7 +413,7 @@ header{
 		font-style: italic;
 		color: #999999;
 		max-width: 770px;
-		align-self: center; 
+		align-self: center;
 	}
 	&__signature{
 		font-family: 'Kaushan Script', cursive;
@@ -435,7 +432,6 @@ header{
 	    margin-right: 10px;
 	    background-color: #f38181;
 	}
-
 	&__owl-prev,&__owl-next{
 		background-color: #f8f8f8;
 		border: none;
@@ -450,25 +446,35 @@ header{
 	&__owl-prev{
 		margin-left: 23px;
 	}
+	/**Start Mods**/
 	&_white{
 		background-color: inherit;
 		.slider__owl-prev, .slider__owl-next{
 			background-color: #ffffff;
 		}
 	}
-	.photo-slider{
-		.photo-slider__slider {
-		    width: 100% !important;
+	.review-slider__slider{
+		width: 93% !important;
+		.slider__imgBox{
+			flex-basis:25%;
 		}
+		.slider__description{
+			flex-basis:75%;
+		}
+	}
+	.photo-slider__slider {
+	    width: 100% !important;
 		.owl-stage {
-		  display: flex;
-		  align-items: center;
+			display: flex;
+			align-items: center;
 		}
 		.slider__imgBox{
 			margin: 0 auto;
 		}
 	}
-}
+	/**End Mods**/
+}	
+
 .services{
 	padding-bottom: 70px;
 	&__wrapper{
@@ -595,20 +601,22 @@ header{
 			font-size: 23px;
 			line-height: 34px;
 		}
-		&__img{
-			margin-left: 40px;
-			margin-right: 55px;
-		}
 		.review-slider__slider {
     		width: calc(100% - 30px) !important;
 		}
 		&__owl-prev{
 			margin-left: 0;
 		}
-		.photo-slider{
-			.photo-slider__slider{
-				width: 100% !important;
-			} 
+		.photo-slider__slider{
+			width: 100% !important;
+		} 
+		.review-slider__slider{
+			.slider__imgBox{
+				flex-basis:30%;
+			}
+			.slider__description{
+				flex-basis:70%;
+			}
 		}
 	}
 	
@@ -652,12 +660,16 @@ header{
 			font-size: 20px;
 			line-height: 28px;
 		}
-		&__img{
-			margin-left: 40px;
-			margin-right: 40px;
-		}
 		&__owl-prev{
 			margin-left: 0;
+		}
+		.review-slider__slider{
+			.slider__imgBox{
+				flex-basis:35%;
+			}
+			.slider__description{
+				flex-basis:65%;
+			}
 		}
 	}
 	.heading{
@@ -749,8 +761,6 @@ header{
 		}
 		&__img{
 			width: 120px !important;
-			margin-left: 20px;
-			margin-right: 30px;
 		}
 	}
 	.services{
@@ -835,6 +845,14 @@ header{
 		&__img{
 			margin-bottom: 5px;
 			width: 100px !important;
+		}
+		.review-slider__slider{
+			.slider__imgBox{
+				flex-basis:100%;
+			}
+			.slider__description{
+				flex-basis:100%;
+			}
 		}
 	}
 	.heading{
