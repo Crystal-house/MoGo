@@ -160,7 +160,8 @@ header {
 
 .heading {
   padding-top: 90px;
-  padding-bottom: 40px; }
+  padding-bottom: 40px;
+  /***Mods*/ }
   .heading__subtitle {
     font-family: 'Kaushan Script', cursive;
     font-weight: normal;
@@ -209,6 +210,58 @@ header {
     height: auto;
     bottom: -90px;
     right: 0; }
+  .heading_review {
+    background-image: url(../img/background2.jpg);
+    padding-top: 122px;
+    padding-bottom: 40px; }
+  .heading_review__items-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding-top: 74px; }
+  .heading_review__item {
+    position: relative;
+    width: 45%;
+    margin: 0 0 62px 50px; }
+  .heading_review__item-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .heading_review__leftBox {
+    -ms-flex-preferred-size: 27%;
+    flex-basis: 27%;
+    text-align: left; }
+  .heading_review__title {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    color: #333333;
+    font-size: 14px;
+    text-align: left;
+    text-transform: uppercase;
+    margin-top: 10px; }
+  .heading_review__subtitle {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #333333;
+    text-align: left;
+    margin-top: 2px; }
+  .heading_review__description {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 24px;
+    color: #999999;
+    max-width: 389px; }
+  .heading_review__line {
+    width: 60px;
+    border-top: 3px solid #f38181;
+    margin-top: 14px;
+    margin-bottom: 14px; }
 
 .description__text {
   font-family: 'Roboto', sans-serif;
@@ -634,7 +687,13 @@ header {
       -ms-flex-preferred-size: 70%;
       flex-basis: 70%; }
   .gallery {
-    margin-top: 50px; } }
+    margin-top: 50px; }
+  .heading {
+    /***Mods*/ }
+    .heading_review__item {
+      margin: 0 0 62px 25px; }
+    .heading_review__rightBox {
+      margin-left: 20px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -665,7 +724,11 @@ header {
     flex-basis: 35%; }
   .slider .review-slider__slider .slider__description {
     -ms-flex-preferred-size: 65%;
-    flex-basis: 65%; } }
+    flex-basis: 65%; }
+  .heading {
+    /***Mods*/ }
+    .heading_review__item {
+      margin: 0 0 20px 25px; } }
 
 @media only screen and (max-width: 768px) {
   .header .d-mobile-none {
@@ -690,6 +753,26 @@ header {
   .header__content {
     padding-top: calc(20vh - 91px);
     padding-bottom: 20vh; }
+  .heading {
+    /*Mods*/ }
+    .heading_review {
+      padding-top: 30px; }
+    .heading_review__items-box {
+      padding-top: 20px; }
+    .heading_review__item {
+      width: 100%; }
+    .heading_review__leftBox {
+      -webkit-box-flex: 0;
+      -ms-flex: none;
+      flex: none; }
+    .heading_review__leftBox img {
+      max-width: 85%;
+      height: auto; }
+    .heading_review__title {
+      margin-top: 0; }
+    .heading_review__description {
+      max-width: 100%;
+      line-height: 18px; }
   .description__text {
     padding: 0 15px 0 15px; }
   .info {
@@ -797,14 +880,30 @@ header {
   .slider .review-slider__slider .slider__description {
     -ms-flex-preferred-size: 100%;
     flex-basis: 100%; }
-  .heading_background {
-    padding-top: 65px; }
-  .heading_background-box {
-    max-width: 320px; }
-  .heading_background-img2 {
-    max-width: 150px;
-    bottom: -60px;
-    right: -64px; }
+  .heading {
+    /**Mods**/ }
+    .heading_background {
+      padding-top: 65px; }
+    .heading_background-box {
+      max-width: 320px; }
+    .heading_background-img2 {
+      max-width: 150px;
+      bottom: -60px;
+      right: -64px; }
+    .heading_review__items-box {
+      padding-top: 0; }
+    .heading_review__item {
+      margin: 0 0 12px 5px; }
+    .heading_review__leftBox {
+      max-width: 72px; }
+    .heading_review__rightBox {
+      margin-left: 0; }
+    .heading_review__description {
+      font-size: 13px; }
+    .heading_review__line {
+      width: 40px;
+      margin-top: 7px;
+      margin-bottom: 7px; }
   .gallery__column-icon {
     display: none; } }
 
@@ -837,3 +936,23 @@ header {
     flex-direction: row; }
   .slider__description {
     text-align: left; } }
+
+@media all and (max-width: 992px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .heading {
+    /***Mods*/ }
+    .heading_review__rightBox {
+      margin-left: 70px; } }
+
+@media all and (max-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .heading {
+    /***Mods*/ }
+    .heading_review__rightBox {
+      margin-left: 20px; } }
+
+@media all and (max-width: 576px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .heading {
+    /***Mods*/ }
+    .heading_background-img2 {
+      right: -40px; }
+    .heading_review__rightBox {
+      margin-left: 0; } }

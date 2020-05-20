@@ -233,7 +233,64 @@ header{
 		bottom:-90px;
 		right: 0;
 	}
-	
+	/***Mods*/
+	&_review {
+			background-image: url(../img/background2.jpg);
+			padding-top: 122px;
+			padding-bottom: 40px;
+		}
+	&_review__items-box{
+		display: flex;
+		flex-wrap:wrap;
+		padding-top: 74px;
+
+	}
+	&_review__item{
+		position: relative;
+		width: 45%;
+		margin: 0 0 62px 50px;
+	}
+	&_review__item-wrapper{
+		display: flex;
+	}
+	&_review__leftBox{
+		flex-basis: 27%;
+		text-align: left;
+	}
+
+	&_review__title{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: bold;
+		color: #333333;
+		font-size: 14px;
+		text-align: left;
+		text-transform: uppercase;
+		margin-top: 10px;
+	}
+	&_review__subtitle{
+		font-family: 'Roboto', sans-serif;
+		font-size: 15px;
+		line-height: 24px;
+		font-weight: lighter;
+		font-style: italic;
+		color: #333333;
+		text-align: left;
+		margin-top: 2px;
+	}
+	&_review__description{
+		font-family: 'Roboto', sans-serif;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 24px;
+		color: #999999;
+		max-width: 389px;
+	}
+	&_review__line{
+		width: 60px;
+		border-top: 3px solid #f38181;
+		margin-top: 14px;
+		margin-bottom: 14px;
+	}
 }
 .description{
 	&__text{
@@ -349,7 +406,6 @@ header{
 	    color: #ffffff;
 	    background-color: #f38181;
 	}
-
 }
 .counter{
 	background-color: #95e1d3;
@@ -676,6 +732,16 @@ header{
 	.gallery{
 		margin-top: 50px;
 	}
+	.heading{
+		/***Mods*/
+		&_review__item {
+		    margin: 0 0 62px 25px;
+		}
+		&_review__rightBox{
+			margin-left: 20px;
+		}
+	}
+	
 	
 
 }
@@ -730,8 +796,9 @@ header{
 		}
 	}
 	.heading{
-		&_background-img2{
-
+		/***Mods*/
+		&_review__item {
+		    margin: 0 0 20px 25px;
 		}
 	}
 
@@ -774,8 +841,29 @@ header{
 		}
 	}
 	.heading{
-		&_background-img2{
-
+		/*Mods*/
+		&_review{
+			padding-top: 30px;
+		}
+		&_review__items-box{
+			padding-top: 20px;
+		}
+		&_review__item{
+			width: 100%;
+		}
+		&_review__leftBox{
+			flex:none;
+		}
+		&_review__leftBox img{
+			max-width: 85%;
+			height: auto;
+		}
+		&_review__title{
+			margin-top: 0;
+		}
+		&_review__description{
+			max-width: 100%;
+			line-height: 18px;
 		}
 	}
 	.description{
@@ -932,6 +1020,28 @@ header{
 			bottom: -60px;
 			right: -64px;
 		}
+		/**Mods**/
+		&_review__items-box {
+		    padding-top: 0;
+		}
+		&_review__item {
+		    margin: 0 0 12px 5px;
+		}
+		&_review__leftBox{
+			max-width: 72px;
+		}
+
+		&_review__rightBox {
+		    margin-left: 0;
+		}
+		&_review__description{
+			font-size: 13px;
+		}
+		&_review__line{
+			width: 40px;
+			margin-top: 7px;
+			margin-bottom: 7px;
+		}
 	}
 	.gallery{
 		&__column-icon{
@@ -983,6 +1093,34 @@ header{
 		}
 		&__description{
 			text-align: left;
+		}
+	}
+}
+
+@media all and (max-width : 992px) and (-ms-high-contrast: none), (-ms-high-contrast: active){
+	.heading{
+		/***Mods*/
+		&_review__rightBox {
+		    margin-left: 70px;
+		}
+	}
+}
+@media all and (max-width : 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active){
+	.heading{
+		/***Mods*/
+		&_review__rightBox {
+		    margin-left: 20px;
+		}
+	}
+}
+@media all and (max-width : 576px) and (-ms-high-contrast: none), (-ms-high-contrast: active){
+	.heading{
+		&_background-img2{
+			right: -40px;
+		}
+		/***Mods*/
+		&_review__rightBox {
+		    margin-left: 0;
 		}
 	}
 }
