@@ -213,7 +213,7 @@ header {
   .heading_review {
     background-image: url(../img/background2.jpg);
     padding-top: 122px;
-    padding-bottom: 40px; }
+    padding-bottom: 0; }
   .heading_review__items-box {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -655,6 +655,83 @@ header {
     text-align: center;
     padding: 0 10px 0 10px; }
 
+.blog {
+  padding-top: 8px;
+  padding-bottom: 50px; }
+  .blog__items-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .blog__item {
+    width: 33.33333%;
+    margin: 0 30px 0 0; }
+  .blog__item:last-child {
+    margin: 0 0 0 0; }
+  .blog__img {
+    max-width: 100%;
+    height: auto; }
+  .blog__date {
+    position: absolute;
+    width: 60px;
+    height: 70px;
+    background-color: #95E1D4;
+    margin-top: -80px;
+    margin-left: -10px; }
+  .blog__day {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 4px; }
+  .blog__month {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #ffffff;
+    text-align: center;
+    margin-top: -10px; }
+  .blog__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #333333;
+    text-align: left;
+    margin-top: 16px; }
+  .blog__description {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: normal;
+    color: #999999;
+    text-align: left;
+    margin-top: 8px;
+    max-width: 380px; }
+  .blog__line {
+    width: 100%;
+    border-top: 1px solid #e5e5e5;
+    margin-top: 15px;
+    margin-bottom: 12px; }
+  .blog__additional-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .blog__comments-box {
+    margin-left: 20px; }
+  .blog__view-number, .blog__comments-number {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    line-height: 24px;
+    font-weight: lighter;
+    font-style: italic;
+    color: #999999;
+    margin-left: 2px; }
+  .blog__view-img, .blog__comments-img {
+    margin-bottom: 2px; }
+
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
   .header__content-title {
@@ -728,7 +805,28 @@ header {
   .heading {
     /***Mods*/ }
     .heading_review__item {
-      margin: 0 0 20px 25px; } }
+      margin: 0 0 20px 25px; }
+  .blog__item {
+    margin: 0 20px 0 0; }
+  .blog__date {
+    width: 50px;
+    height: 60px;
+    margin-top: -70px; }
+  .blog__day {
+    margin-top: 1px;
+    font-size: 28px; }
+  .blog__month {
+    font-size: 14px; }
+  .blog__title {
+    font-size: 13px; }
+  .blog__description {
+    font-size: 14px;
+    line-height: 20px; }
+  .blog__line {
+    margin-top: 10px;
+    margin-bottom: 5px; }
+  .blog__view-number, .blog__comments-number {
+    font-size: 14px; } }
 
 @media only screen and (max-width: 768px) {
   .header .d-mobile-none {
@@ -836,7 +934,35 @@ header {
       -webkit-box-flex: 0;
       -ms-flex: none;
       flex: none;
-      width: 50%; } }
+      width: 50%; }
+  .blog__items-box {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap; }
+  .blog__item {
+    width: 100%;
+    margin-top: 60px; }
+  .blog__item:first-child {
+    margin-top: 0; }
+  .blog__item:last-child {
+    margin-top: 60px; }
+  .blog__imgBox {
+    position: relative;
+    max-width: 380px;
+    margin: 0 auto; }
+  .blog__title {
+    text-align: center; }
+  .blog__description {
+    text-align: center;
+    max-width: 100%; }
+  .blog__line {
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 5px; }
+  .blog__additional-info {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
 
 @media only screen and (max-width: 576px) {
   .header__content-title {
@@ -894,6 +1020,8 @@ header {
       padding-top: 0; }
     .heading_review__item {
       margin: 0 0 12px 5px; }
+    .heading_review__item:last-child {
+      margin-bottom: 0px; }
     .heading_review__leftBox {
       max-width: 72px; }
     .heading_review__rightBox {
