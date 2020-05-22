@@ -768,7 +768,37 @@ header{
 	&__comments-img{
 		margin-bottom: 2px;
 	}
-
+}
+.map{
+	padding: 57px 0 57px 0;
+	background-image: url(../img/background3.jpg);
+	&__box{
+		text-align: center;
+	}
+	&__baloon{
+		margin-bottom: 8px;
+	}
+	&__link{
+		font-family: 'Montserrat', sans-serif;
+		font-size: 24px;
+		font-weight: 700;
+		text-transform: uppercase;
+		color: #f38181;
+		margin-top: 13px;
+	}
+	&__line{
+		width: 60px;
+		border-top: 3px solid #f38181;
+		margin: 12px auto 0 auto;
+	}
+	&__link:hover{
+		text-decoration: none;
+		color: #F36F6F;
+	}
+	&__link:active, &__line:focus, &__line:visited{
+		text-decoration: none;
+		color: #f38181;
+	}
 }
 
 /* Large Devices, Wide Screens */
