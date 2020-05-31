@@ -197,15 +197,10 @@ header{
 		margin-top: 26px;
 		margin-bottom: 0;
 	}
-	&_pt-108{
-		padding-top: 108px;
-	}
-	&_pb-10{
-		padding-bottom: 10px;
-	}
 	&_background{
 		position: relative;
 		background-image: url(../img/background.jpg);
+		background-size: cover;
 		padding-top: 112px;
 		padding-bottom: 0;
 		margin-bottom: 60px;
@@ -216,26 +211,27 @@ header{
 	&_background-box{
 		position: relative;
 		width: 100%;
-		max-width: 600px;
+		max-width: 477px;
 		margin: 0 auto;
 		text-align: center;
 	}
 	&_background-img1{
 		display: block;
-		max-width: 100%;
+		width: 100%;
 		height: auto;
 	}
 	&_background-img2{
 		display: block;
 		position: absolute;
-		max-width: 100%;
+		width: 274рх / 477рх * 100%;
 		height: auto;
-		bottom:-90px;
-		right: 0;
+		bottom:-15%;
+		right: -29%;
 	}
 	/***Mods*/
 	&_review {
 			background-image: url(../img/background2.jpg);
+			background-size: cover;
 			padding-top: 122px;
 			padding-bottom: 0;
 		}
@@ -257,7 +253,6 @@ header{
 		flex-basis: 27%;
 		text-align: left;
 	}
-
 	&_review__title{
 		font-family: 'Montserrat', sans-serif;
 		font-weight: bold;
@@ -314,18 +309,19 @@ header{
 		margin: 0 -15px 0;
 	}
 	&__wrapper{
-		width: 33.33333%;
-    	padding: 0 15px;
+		width: 33.333333%;
+    	padding: 0 15px 0 15px;
 	}
 	&__item{
 		position: relative;
 		background-color: #95e1d3;
+		width: 100%;
 		&:hover{
 			.info__box{
 				transform: translate3d(-10px, -10px, 0);
 			}
-			.box_gradient img{
-				opacity: .1;
+			.info__gradient{
+				opacity: .9;
 			}
 			.info__description{
 				opacity: 1;
@@ -335,9 +331,51 @@ header{
 	&__box{
 		transition: transform .2s linear;
 	}
-	.box_gradient{
-	    background: linear-gradient(to bottom, #f38181, #fce38a);
-    	transition: transform .2s linear;
+	&__gradient{
+		position: absolute;
+		height: 100%;
+		top: 0;
+		width: 100%;
+		background-image: linear-gradient(to bottom, #f38181, #fce38a);
+		transition: transform .2s linear;
+		opacity: 0;
+		transition: opacity .1s linear;
+	}
+	&__box-bg-story-1{
+		height: 0;
+		padding-top: 65.79%;
+		background: url(../img/storyAboutUs1.jpg);
+		background-size: cover;
+	}
+	&__box-bg-story-2{
+		height: 0;
+		padding-top: 65.79%;
+		background: url(../img/storyAboutUs2.jpg);
+		background-size: cover;
+	}
+	&__box-bg-story-3{
+		height: 0;
+		padding-top: 65.79%;
+		background: url(../img/storyAboutUs3.jpg);
+		background-size: cover;
+	}
+	&__box-bg-team-1{
+		height: 0;
+		padding-top: 123.688%;
+		background-image: url(../img/team1.jpg);
+		background-size: cover;
+	}
+	&__box-bg-team-2{
+		height: 0;
+		padding-top: 123.688%;
+		background-image: url(../img/team2.jpg); 
+		background-size: cover;
+	}
+	&__box-bg-team-3{
+		height: 0;
+		padding-top: 123.688%;
+		background-image: url(../img/team3.jpg);
+		background-size: cover;
 	}
 	img{
 		display: block;
@@ -531,6 +569,10 @@ header{
 }	
 .services{
 	padding-bottom: 70px;
+	&__heading{
+		padding-top: 108px;
+		padding-bottom: 10px;
+	}
 	&__wrapper{
 		display: flex;
 		flex-wrap: wrap;
@@ -538,6 +580,9 @@ header{
 	&__item{
 		width: 33.33333%;
     	padding: 50px 15px 50px 25px;
+	}
+	&__item:nth-child(-n+3){
+		border-bottom: 1px solid #e5e5e5;
 	}
 	&__icons{
 		position: absolute;
@@ -561,9 +606,6 @@ header{
 		color: #999999;
 		max-width: 290px;
 		margin-left: 65px;
-	}
-	&_border{
-		border-bottom: 1px solid #e5e5e5;
 	}
 }
 .what-we-do{
@@ -631,36 +673,81 @@ header{
 		flex-shrink:1;
 		flex-basis:0;
 	}
-	&__column-img{
-		max-width: 100%;
-		height: auto;
-		transition: opacity .2s linear;
-	}
-	.box_gradient{
+	&__item{
 		position: relative;
+		width: 100%;
+	}
+	&__item:hover{
+		.gallery__item-hover-box{
+			opacity: 1;
+			z-index: 2;
+		}
+		.gallery__item-gradient{
+			opacity: 0.9;
+		}
+	}
+	&__item-box{
+		position: relative;
+		height: 0;
+	}
+	&__item-bg-1{
+		background: url(../img/picture3.jpg);
+		background-size: cover;
+		padding-top: 81.978%;
+	}
+	&__item-bg-2{
+		background: url(../img/picture7.jpg);
+		background-size: cover;
+		padding-top: 81.978%;
+	}
+	&__item-bg-3{
+		background: url(../img/picture4.jpg);
+		background-size: cover;
+		padding-top: 81.978%;
+	}
+	&__item-bg-4{
+		background: url(../img/picture8.jpg);
+		background-size: cover;
+		padding-top: 81.978%;
+	}
+	&__item-bg-5{
+		background: url(../img/picture5.jpg);
+		background-size: cover;
+		padding-top: 163.952%;
+	}
+	&__item-bg-6{
+		background: url(../img/picture6.jpg);
+		background-size: cover;
+		padding-top: 81.978%;
+	}
+	&__item-bg-7{
+		background: url(../img/picture9.jpg);
+		background-size: cover;
+		padding-top: 81.978%;
+	}
+	&__item-gradient{
 		background: linear-gradient(to bottom, #f38181, #fce38a);
     	transition: transform .2s linear;
+    	position: absolute;
+		top:0;
+		width: 100%;
+		height: 100%;
+		opacity: 0;
+		transition: opacity .1s linear;
+		z-index: 1;
 	}
-	.box_gradient:hover{
-		.gallery__column-img{
-			opacity: .1;
-		}
-		.gallery__column-hover-box{
-			opacity: 1;
-		}
-	}
-	&__column-hover-box{
+	&__item-hover-box{
 		position: absolute;
 		top:41%;
 		width: 100%;
-		max-width: 480px;
+		transition: opacity .1s linear;
 		opacity: 0;
 	}
-	&__column-icon{
+	&__item-icon{
 		text-align: center;
 		margin-bottom: 10px;
 	}
-	&__column-title{
+	&__item-title{
 		font-family: 'Montserrat', sans-serif;
 		font-size: 14px;
 		font-weight: 500;
@@ -669,7 +756,7 @@ header{
 		text-align: center;
 		padding: 0 10px 0 10px;
 	}
-	&__column-description{
+	&__item-description{
 		font-family: 'Roboto', sans-serif;
 		font-size: 15px;
 		font-weight: lighter;
@@ -681,8 +768,12 @@ header{
 	}
 }
 .blog{
-	padding-top: 8px;
+	padding-top: 0;
 	padding-bottom: 50px;
+	&__heading{
+		padding-top: 108px;
+		padding-bottom: 48px;
+	}
 	&__items-box{
 		display: flex;
 	}
@@ -692,6 +783,16 @@ header{
 	}
 	&__item:last-child{
 		margin: 0 0 0 0;
+	}
+	&__item-wrapper{
+		display: flex;
+		flex-direction: column;
+	}
+	&__item-main-content-wrapper{
+		flex-grow:1;
+	}
+	&__item-add-content-wrapper{
+		flex-shrink:0;
 	}
 	&__img{
 		max-width: 100%;
@@ -772,6 +873,7 @@ header{
 .map{
 	padding: 57px 0 57px 0;
 	background-image: url(../img/background3.jpg);
+	background-size: cover;
 	&__box{
 		text-align: center;
 	}
@@ -1245,6 +1347,12 @@ header{
 			max-width: 100%;
 			line-height: 18px;
 		}
+		&_background-box{
+			max-width: 400px;
+		}
+		&_background-img2{
+			right: -18%;
+		}
 	}
 	.description{
 		&__text{
@@ -1293,6 +1401,9 @@ header{
 			width: 100%;
 	    	padding: 15px 15px 15px 0;
 		}
+		&__item:nth-child(-n+3){
+			border-bottom: none;
+		}
 		&__icons{
 			padding-left: 0;
 		}
@@ -1305,9 +1416,7 @@ header{
 			margin-left: 48px;
 			line-height: 20px;
 		}
-		&_border{
-			border: none;
-		}
+		
 	}
 	.what-we-do{
 		flex-direction: column;
@@ -1463,11 +1572,6 @@ header{
 		&_background-box{
 			max-width: 320px;
 		}
-		&_background-img2{
-			max-width: 150px;
-			bottom: -60px;
-			right: -64px;
-		}
 		/**Mods**/
 		&_review__items-box {
 		    padding-top: 0;
@@ -1495,7 +1599,7 @@ header{
 		}
 	}
 	.gallery{
-		&__column-icon{
+		&__item-icon{
 			display: none;
 		}
 	}
@@ -1519,19 +1623,14 @@ header{
 	}
 	.heading{
 		&_background-box{
-			max-width: 230px;
-		}
-		&_background-img2{
-			max-width: 125px;
-			bottom: -44px;
-			right: -44px;
+			max-width: 225px;
 		}
 	}
 	.gallery{
 		&__column{
 			width: 100%;
 		}
-		&__column-icon{
+		&__item-icon{
 			display: block;
 		}
 	}
@@ -1572,6 +1671,9 @@ header{
 		&_review__rightBox {
 		    margin-left: 20px;
 		}
+		&_background-img2{
+			right: -19%;
+		}
 	}
 	.footer{
 		&_column-three{
@@ -1585,7 +1687,7 @@ header{
 @media all and (max-width : 576px) and (-ms-high-contrast: none), (-ms-high-contrast: active){
 	.heading{
 		&_background-img2{
-			right: -40px;
+			right: -18%;
 		}
 		/***Mods*/
 		&_review__rightBox {
@@ -1593,3 +1695,5 @@ header{
 		}
 	}
 }
+
+ 
