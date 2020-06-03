@@ -980,6 +980,16 @@ header {
     text-transform: uppercase;
     background-color: #95E1D3;
     height: 40px; }
+  .footer__submit-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+  .footer #footer__subscribe-email-error {
+    position: absolute;
+    top: 45px;
+    left: 0;
+    color: #F36F6F; }
   .footer__blog-item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1184,7 +1194,11 @@ header {
   .footer__description {
     max-width: 100%; }
   .footer__blog-item-title {
-    max-width: 100%; } }
+    max-width: 100%; }
+  .footer__blog-title {
+    margin: 35px 0 35px 0; }
+  .footer__instagram-title {
+    margin: 35px 0 35px 0; } }
 
 @media only screen and (max-width: 768px) {
   .header .d-mobile-none {

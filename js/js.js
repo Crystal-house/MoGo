@@ -69,16 +69,48 @@ function initAccordion(){
 	});
 }
 
+function initSubscribeValidate(){
+	$('#footer__subscribe-form').validate({
+		rules: {
+			email: {
+				required: false,
+				email: true
+			}
+		},
+		messages: {
+			email: "Please enter a valid email address"
+		}
+	});
+}
+
+function initSubscribeLog(){
+	$('#footer__subscribe-form').on('submit', function (e) {  
+		e.preventDefault();
+		let subscribeEmail = $('#footer__subscribe-email').val();
+		if($('#footer__subscribe-email').is('.valid')){
+			console.log("Valid Email:" + subscribeEmail);
+		}else{}
+	});	
+}
+
+
 
 
 $(document).ready(function(){
 	initReviewSlider();
 	initAccordion();
 	initPhotoSlider();
+	initSubscribeValidate();
+	initSubscribeLog();
+
 });
 
 
 
+
+		
+
+	
 
 
 

@@ -660,9 +660,9 @@
                             <a class="footer__social-link" href="#"><i class="fab fa-dribbble"></i></a>
                             <a class="footer__social-link" href="#"><i class="fab fa-tumblr"></i></a>
                         </div>
-                        <form id="footer__subscribe-form" method="post" action="/">
+                        <form class="" id="footer__subscribe-form" method="get" action="">
                             <div class="footer__submit-group">
-                                <input type="text" placeholder="Your Email..." value="" id="footer__subscribe-email" name="footer__submit-email"><input type="submit" value="Subscribe" id="footer__subscribe-submit" name="footer__submit">
+                                <input type="email" name="email" required="" placeholder="Your Email..." value="" id="footer__subscribe-email"><input type="submit" value="Subscribe" class="submit" id="footer__subscribe-submit" name="footer__submit">
                             </div>
                         </form>
                     </div>
@@ -721,6 +721,8 @@
         </footer>
     </main>
     <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.js"></script>
+
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script src="js/owl.carousel.min.js"></script>
     <script type="text/javascript" src="js/js.js"></script>

@@ -1009,6 +1009,17 @@ header{
 		background-color: #95E1D3;
 		height: 40px;
 	}
+	&__submit-group{
+		display: flex;
+		position: relative;
+	}
+	#footer__subscribe-email-error{
+		position: absolute;
+		top: 45px;
+		left: 0;
+		color: #F36F6F;
+	}
+
 	&__blog-item{
 		display: flex;
 		margin-bottom: 30px;
@@ -1282,6 +1293,12 @@ header{
 		}
 		&__blog-item-title{
 			max-width: 100%;
+		}
+		&__blog-title {
+		    margin: 35px 0 35px 0;
+		}
+		&__instagram-title {
+		    margin: 35px 0 35px 0;
 		}
 	}
 
