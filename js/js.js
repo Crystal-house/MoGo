@@ -71,6 +71,10 @@ function initAccordion(){
 
 function initSubscribeValidate(){
 	$('#footer__subscribe-form').validate({
+		submitHandler: function() {
+			let subscribeEmail = $('#footer__subscribe-email').val();
+			console.log(subscribeEmail);
+		},
 		rules: {
 			email: {
 				required: false,
@@ -83,26 +87,12 @@ function initSubscribeValidate(){
 	});
 }
 
-function initSubscribeLog(){
-	$('#footer__subscribe-form').on('submit', function (e) {  
-		e.preventDefault();
-		let subscribeEmail = $('#footer__subscribe-email').val();
-		if($('#footer__subscribe-email').is('.valid')){
-			console.log("Valid Email:" + subscribeEmail);
-		}else{}
-	});	
-}
-
-
-
 
 $(document).ready(function(){
 	initReviewSlider();
 	initAccordion();
 	initPhotoSlider();
 	initSubscribeValidate();
-	initSubscribeLog();
-
 });
 
 
